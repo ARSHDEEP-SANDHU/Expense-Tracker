@@ -1,11 +1,12 @@
 *{
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/black-elegant-background-with-copy-space.jpg);
+    background-image: url(https://images2.alphacoders.com/131/thumb-1920-1318485.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -25,10 +26,11 @@ body {
 
 .inputBox{
     align-self: stretch;
-    padding: 20px;
+    padding: 20px 50px;
     /* background-color: aqua; */
-    gap: 8px;
-    border:solid white ;
+    gap: 1rem;
+    border: dotted 0.1rem white ;
+    border-radius: 0.5rem;
 }
 
 .inputBox > input,select,button {
@@ -44,20 +46,23 @@ body {
     background-color: black;
     color: white;
     opacity: 0.8;
-    border: solid #720e9e 1px;
-    font-size: large;
+    border: none #720e9e 1px;
+    border-radius: 0.4rem 0 0.4rem 0;
+    font-size: 1.1rem;
+    /* box-shadow: 0px 1px 7px #720e9e; */
 }
 
 .inputBox > label {
-    font-size: large;
+    /* font-size: large; */
     color: white;
 }
 
 .inputBox > h2 {
-    font-size: xx-large;
+    font-size: 2.4rem;
     margin-bottom: 10px;
-    color: #9932cc;
-    border-bottom: solid white 1px;
+    color: rgb(171, 30, 171);
+    /* opacity: 0.9; */
+    /* border-bottom: solid white 1px; */
 }
 
 a{
@@ -67,11 +72,27 @@ a{
 
 a > button {
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.85;
     background-color: #720e9e;
     color: white;
-    font-size: larger;
-    font-weight: 700;
-    margin-top: 18px
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 18px;
+    border-radius:0.5rem 0 0.5rem 0;
+    transition: all 0.25s;
     
+}
+
+a > button:hover {
+    box-shadow:0px 4px 9px #9932cc;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.detailBox {
+    padding: 4rem 0;
 }
